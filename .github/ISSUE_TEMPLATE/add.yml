@@ -1,0 +1,55 @@
+name: ➕ Add stream
+description: Submit a new stream.
+title: 'Add: '
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        Thank you so much for taking the time to submit a stream to the project!
+
+        # Before submitting, please make sure your stream complies with the guidelines below.
+
+        First, **you must check that your stream is compliant from a technical standpoint by entering its URL on [https://escfent.com/stream-check](https://escfent.com/stream-check).**
+
+        Your stream also needs to follow these guidelines:
+        - Must **NOT** come from **any** of the broadcaster's official sources (streaming services, official websites, etc.)
+        - Must be a stable stream you've tested by watching it for, at the very least, a minute
+        - Must **NOT** be the stream for a channel of the Israeli or Azeri public broadcaster (KAN / Ictimai TV)
+        - Must **NOT** have been illegally obtained
+
+        You **can** submit geoblocked streams, as long as you specify which countries they're available in.
+
+        You also **don't have to submit a direct livestream URL** (the kind that usually ends in .m3u8 or .mpd): if you found a way to watch a channel's livestream online, legally, for free and without an account, you can submit the URL of the site you found it on.
+
+        Finally, if you're submitting a stream that is broadcast with the original audio track, you are the best person ever and I love you.
+  - type: checkboxes
+    attributes:
+      label: Again, make sure you've read the guidelines before submitting!
+      options:
+        - label: I confirm that I've read the guidelines and that the stream I'm submitting is compliant
+          required: true
+        - label: I also think that Ditonellapiaga should've won Sanremo this year
+          required: false
+  - type: input
+    attributes:
+      label: Channel country
+      placeholder: United Kingdom
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Channel name
+      placeholder: BBC One
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Channel URL
+      placeholder: https://janice.com/bbcone.m3u8
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Additional info
+      description: Optional - Additional info that might be useful to know, like what countries it's available in if geoblocked, or if it has multiple audio tracks
+      placeholder: This stream is geoblocked and only available in the United Kingdom.

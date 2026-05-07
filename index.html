@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/@fontsource/inter/400.css">
+    <link rel="stylesheet" href="node_modules/@fontsource/inter/700.css">
+    <link rel="stylesheet" href="node_modules/@fontsource/inter/400-italic.css">
+    <link rel="stylesheet" href="node_modules/@fontsource/inter/700-italic.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/svg/favicon.svg" type="image/svg">
+    <title>Unofficial Eurovision Song Contest Broadcasts</title>
+</head>
+<body>
+    <div id="show-selection">
+        <h1>Unofficial Eurovision Song Contest Broadcasts</h1>
+        <h3>brought to you by <a target="_blank" href="https://links.escfent.com"><img src="assets/svg/logo.svg" alt="ESC Fent"></a></h3>
+        <p><b>🇵🇸 Please consider donating to a Palestinian charity</b> such as the <a href="https://give.pcrf.net/campaign/739651/donate">Palestine Children's Relief Fund (PCRF)</a>.</p>
+        <p><b>🔉 Looking for a stream with no commentary?</b> Tune into one of the channels marked with the 🔉 symbol, and you'll be able to switch to the original audio track!</p>
+        <p>ℹ️ We currently have the streams of channels from <b id="countries-count"></b> out of the <abbr title="35 participating broadcasters + Netherlands + Iceland + North Macedonia - Israel - Azerbaijan = 36 total broadcasters"><b>36</b> broadcasting countries</abbr>! Contribute to the project by submitting livestream URLs <b>(even for channels that are already on the list!)</b> on <a href="https://github.com/ESCFent/UnofficialESCBroadcasts/issues/new?template=add.yml" target="_blank">GitHub</a> or <a href="mailto:broadcasts@escfent.com">via email</a>.</p>
+        <select name="channels" id="channels" required>
+            <option value="" disabled selected>Select a stream from this dropdown</option>
+            <option value="" disabled id="selected-channel"></option>
+        </select>
+    </div>
+    <div id="player-container">
+        <div id="player" class="hidden">
+            <video autoplay></video>
+        </div>
+        <iframe src="about:blank" frameborder="0" allowfullscreen allow="autoplay *; encrypted-media *;" scrolling="no" class="hidden"></iframe>
+        <div id="original-audio" class="hidden">
+            <span id="arrow">↑</span>
+            <span id="original-audio-text">Click up here, then on <i>Language</i>, then switch to the <i><b id="original-audio-track-name"></b></i> audio track to watch without commentary :)</span>
+        </div>
+        <div id="mixed-content-instructions" class="hidden">
+            <h2>Click <a target="_blank">here</a> to watch this stream.</h2>
+            <p>It will open in a new tab.</p>
+        </div>
+        <div id="vlc-instructions" class="hidden">
+            <h2>This stream must be watched externally.</h2>
+            <p>This stream can't be watched on this website, you must watch it through the VLC media player.</p>
+            <p>Click <a target="_blank" href="https://www.videolan.org/vlc/#download">here</a> to install it, open it and then:</p>
+            <ul>
+                <li>If you're on desktop, click the <b>Media</b> menu item in the top right, then on <b>Open Network Stream...</b>, then insert the URL seen below in the URL box and click <b>Play</b>.</li>
+                <li>If you're on mobile, click on the <b>More</b> tab at the bottom, then, under <b>Streams</b>, click on <b>New stream</b>, insert the URL seen below in the URL box and click on the <b>Send</b> icon.</li>
+            </ul>
+            <p>The stream's URL is: <code></code></p>
+        </div>
+    </div>
+    <p>
+        <p id="iptv-client-instructions">
+            <span>📺 You can also access these streams with an IPTV client to easily watch them on your Smart TV or similar.</span>
+            <span>In your IPTV client, enter in the following URL: <code>https://escfent.com/index.m3u8</code>.</span>
+            <span>If you're using Kodi and/or having issues with some channels, use the alternative list at <code>https://escfent.com/alt.m3u8</code>.</span>
+        </p>
+        <details id="info">
+            <summary>Why does this website exist?</summary>
+            <p>With the European Broadcasting Union allowing Israel to participate in the 2026 Eurovision Song Contest, many people have chosen to boycott this year's contest. <a target="_blank" href="https://apnews.com/article/eurovision-song-contest-boycott-israel-gaza-vienna-f6f7f0c8d97339665383f480dcdac583">5 participating countries have even withdrawn.</a></p>
+            <p>Not everyone, however, is willing to suddenly let go of a contest they've watched for years and that they're huge fans of. And I understand that.<br>But we've still got to let the EBU know that it allowing Israel to participate is unacceptable. And since they obviously haven't cared about the immense criticism and disrepute they've faced these past few months, we've got to hit them where it hurts: <i>TV ratings</i>. And that's why I made this website.</p>
+            <p>By watching Eurovision through the unofficial livestreams of the national broadcasters' channels on this page, you can still watch the contest <i>without</i> contributing to the broadcasters' ratings.
+        </details>    
+    </p>
+    <p>
+        <details id="disclaimer">
+            <summary>Disclaimer / DMCA</summary>
+            <p>
+                This website only hosts <b>links</b> to publicly accessible livestreams of free-to-air TV channels. They aren't hosted by the website owner¹, who can't be sure of their real origin and is assuming in good faith they haven't been illegally obtained. Either way, if you represent a broadcaster featured on this website and would like your relevant stream(s) removed, email <a target="_blank" href="mailto:dmca@escfent.com">dmca@escfent.com</a>.
+            </p>
+            <p>¹ The streams on the escfent.com domain, as their subdomains suggest, are merely <b>reverse proxies</b> of IP addresses of third-party streaming servers the website owner doesn't own and has no control of. The reason the IPs are proxied through the escfent.com domain is to make their server's streams securely accessible via SSL.</p>
+        </details>
+    </p>
+    <script type="module" src="assets/js/script.js"></script>
+</body>
+</html>
