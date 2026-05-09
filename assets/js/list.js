@@ -8,7 +8,7 @@ export default [
                 streams: [
                     {
                         url: "http://217.73.139.200:5443/play/a00f",
-                        quality: "1080p",
+                        quality: "1080p50",
                         external: true
                     }
                 ]
@@ -40,7 +40,7 @@ export default [
                     {
                         url: "http://203.39.27.34:55555/SBS%20ONE%20HD",
                         external: true,
-                        quality: "1080p"
+                        quality: "1080p50"
                     }
                 ]
             }
@@ -55,7 +55,7 @@ export default [
                 streams: [
                     {
                         url: "https://netplus.zappr.stream/orf1.m3u8",
-                        quality: "720p"
+                        quality: "720p50"
                     }
                 ]
             }
@@ -70,7 +70,7 @@ export default [
                 streams: [
                     {
                         url: "http://185.207.34.31:8000/play/21025",
-                        quality: "1080p",
+                        quality: "1080p50",
                         external: true
                     }
                 ]
@@ -81,7 +81,7 @@ export default [
                     {
                         url: "http://109.89.79.6:55555/la%20une",
                         external: true,
-                        quality: "1080p"
+                        quality: "1080p50"
                     }
                 ]
             },
@@ -91,7 +91,7 @@ export default [
                     {
                         url: "http://109.89.79.6:55555/Tipik",
                         external: true,
-                        quality: "1080p"
+                        quality: "1080p50"
                     }
                 ]
             }
@@ -124,7 +124,7 @@ export default [
                     {
                         url: "https://193-235-65-225-9983-proxy.escfent.com/stream/channel/8bd986925812eb01257cc713bc7bd9f5?profile=matroska",
                         external: true,
-                        quality: "1080p"
+                        quality: "1080p50"
                     }
                 ]
             }
@@ -155,7 +155,7 @@ export default [
                     {
                         url: "http://94.236.200.185:55555/RIK%20Sat",
                         external: true,
-                        quality: "576p"
+                        quality: "576p50"
                     }
                 ]
             }
@@ -202,7 +202,7 @@ export default [
                     {
                         url: "http://90.236.77.208:55555/DR1",
                         external: true,
-                        quality: "720p"
+                        quality: "720p50"
                     }
                 ]
             }
@@ -250,7 +250,7 @@ export default [
                 streams: [
                     {
                         url: "https://netplus.zappr.stream/france2hd.m3u8",
-                        quality: "720p",
+                        quality: "720p50",
                         originalAudio: "Original version"
                     }
                 ]
@@ -260,7 +260,7 @@ export default [
                 streams: [
                     {
                         url: "https://netplus.zappr.stream/france4hd.m3u8",
-                        quality: "720p",
+                        quality: "720p50",
                         originalAudio: "Original version"
                     }
                 ]
@@ -292,7 +292,7 @@ export default [
                 streams: [
                     {
                         url: "https://netplus.zappr.stream/daserstehd.m3u8",
-                        quality: "720p"
+                        quality: "720p50"
                     }
                 ]
             },
@@ -301,7 +301,7 @@ export default [
                 streams: [
                     {
                         url: "https://netplus.zappr.stream/onehd.m3u8",
-                        quality: "720p"
+                        quality: "720p50"
                     }
                 ]
             }
@@ -317,7 +317,7 @@ export default [
                     {
                         url: "http://94.67.8.121:55555/ERT%201%20HD",
                         external: true,
-                        quality: "1080p"
+                        quality: "1080p50"
                     }
                 ]
             }
@@ -332,7 +332,7 @@ export default [
                 streams: [
                     {
                         url: "https://wp8-s-anp31323132-live-ch-prod.prod.cdn.dmdsdp.com/live/disk1/SV09101/stb-dash-fhd-avc/SV09101.mpd",
-                        quality: "1080p",
+                        quality: "1080p50",
                         originalAudio: "English",
                         clearkeys: {
                             "7f9f6e3c78b2486f9fe13e06bdb768d2": "b341c1136a3738f3a6ea197d31fab35c"
@@ -344,7 +344,7 @@ export default [
                     },
                     {
                         url: "https://rai.zappr.stream/rai1.m3u8",
-                        quality: "720p"
+                        quality: "720p50"
                     },
                     {
                         url: "https://dash2.antik.sk/live/test_rai_uno_tizen/playlist.m3u8",
@@ -361,7 +361,7 @@ export default [
                     },
                     {
                         url: "https://rai.zappr.stream/rai2.m3u8",
-                        quality: "720p"
+                        quality: "720p50"
                     }
                 ]
             }
@@ -389,6 +389,7 @@ export default [
         channels: [
             {
                 name: "TVCG 1",
+                warning: "occasionally airs TVCG 2",
                 streams: [
                     {
                         url: "https://169-150-255-53-proxy.escfent.com/RTCG1/index.m3u8",
@@ -438,23 +439,8 @@ export default [
                 streams: [
                     {
                         url: "https://169-150-255-53-proxy.escfent.com/MRT1/index.m3u8",
-                        quality: "720p"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        name: "Norway",
-        isoCode: "NO",
-        channels: [
-            {
-                name: "NRK1",
-                streams: [
-                    {
-                        url: "http://85.27.185.90:55555/NRK%201%20HD",
-                        external: true,
-                        quality: "720p"
+                        quality: "1080p50",
+                        external: true
                     }
                 ]
             }
@@ -482,7 +468,7 @@ export default [
                 streams: [
                     {
                         url: "https://netplus.zappr.stream/tvpolonia.m3u8",
-                        quality: "1080p"
+                        quality: "1080p50"
                     },
                     {
                         url: "https://dash2.antik.sk/live/test_tvp_polonia/playlist.m3u8",
@@ -501,7 +487,7 @@ export default [
                 streams: [
                     {
                         url: "https://rr.cdn.vodafone.pt/LIVE/sdash/LIVE$110/index.mpd/Manifest?start=LIVE&end=END&device=DASH_AVC_FULLHD",
-                        quality: "720p",
+                        quality: "720p50",
                         clearkeys: {
                             "7c2c25e40d8e4f70a3c343e97d9d52ed": "07faa6904c06f9bbf8860691c9c3629d"
                         }
@@ -513,7 +499,7 @@ export default [
                 streams: [
                     {
                         url: "https://netplus.zappr.stream/rtpi.m3u8",
-                        quality: "576p"
+                        quality: "576p50"
                     }
                 ]
             }
@@ -539,7 +525,7 @@ export default [
                 streams: [
                     {
                         url: "https://netplus.zappr.stream/tvrinternational.m3u8",
-                        quality: "576p"
+                        quality: "576p50"
                     }
                 ]
             }
@@ -579,7 +565,7 @@ export default [
                 streams: [
                     {
                         url: "https://netplus.zappr.stream/rtssat.m3u8",
-                        quality: "720p"
+                        quality: "720p50"
                     },
                     {
                         url: "https://webtvstream.bhtelecom.ba/rts_svet.m3u8",
@@ -599,12 +585,12 @@ export default [
                     {
                         url: "https://193-235-65-225-9983-proxy.escfent.com/stream/channel/98c9090585857e9021d116d178fbd1b9?profile=matroska",
                         type: "direct",
-                        quality: "720p"
+                        quality: "720p50"
                     },
                     {
                         url: "https://193-235-65-225-9983-proxy.escfent.com/stream/channel/98c9090585857e9021d116d178fbd1b9?profile=matroska",
                         type: "iframe",
-                        quality: "720p",
+                        quality: "720p50",
                         m3u8List: false
                     }
                 ]
@@ -620,7 +606,7 @@ export default [
                 streams: [
                     {
                         url: "https://netplus.zappr.stream/rts1hd.m3u8",
-                        quality: "1080p",
+                        quality: "1080p50",
                         originalAudio: "English"
                     }
                 ]
@@ -630,7 +616,7 @@ export default [
                 streams: [
                     {
                         url: "https://netplus.zappr.stream/rts2hd.m3u8",
-                        quality: "1080p",
+                        quality: "1080p50",
                         originalAudio: "English"
                     }
                 ]
@@ -640,7 +626,7 @@ export default [
                 streams: [
                     {
                         url: "https://netplus.zappr.stream/srf1hd.m3u8",
-                        quality: "1080p",
+                        quality: "1080p50",
                         originalAudio: "English"
                     }
                 ]
@@ -650,7 +636,7 @@ export default [
                 streams: [
                     {
                         url: "https://netplus.zappr.stream/srf2hd.m3u8",
-                        quality: "1080p",
+                        quality: "1080p50",
                         originalAudio: "English"
                     }
                 ]
@@ -660,7 +646,7 @@ export default [
                 streams: [
                     {
                         url: "https://netplus.zappr.stream/rsila1hd.m3u8",
-                        quality: "1080p",
+                        quality: "1080p50",
                         originalAudio: "English"
                     }
                 ]
