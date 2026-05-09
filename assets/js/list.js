@@ -242,6 +242,21 @@ export default [
         ]
     },
     {
+        name: "Finland",
+        isoCode: "FI",
+        channels: [
+            {
+                name: "Yle TV1",
+                streams: [
+                    {
+                        url: "special://tvkaista/yle-tv1",
+                        quality: "720p"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         name: "France",
         isoCode: "FR",
         channels: [
@@ -511,6 +526,7 @@ export default [
         channels: [
             {
                 name: "TVR 1",
+                warning: "has popup ads, please watch with an adblocker",
                 streams: [
                     {
                         url: "https://canale-tv.com/channel/tvr1.html",
