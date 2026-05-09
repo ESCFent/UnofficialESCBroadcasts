@@ -247,6 +247,7 @@ export default [
         channels: [
             {
                 name: "Yle TV1",
+                warning: "might fail on first load, you might need to select it twice",
                 streams: [
                     {
                         url: "special://tvkaista/yle-tv1",
