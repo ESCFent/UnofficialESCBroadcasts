@@ -153,6 +153,10 @@ export default [
                 name: "RIK Sat",
                 streams: [
                     {
+                        url: "https://restreamer.qzz.io/memfs/76cc2980-fce0-4aa2-99fd-8b153b846628.m3u8",
+                        quality: "720p"
+                    },
+                    {
                         url: "http://94.236.200.185:55555/RIK%20Sat",
                         external: true,
                         quality: "576p50"
@@ -331,6 +335,10 @@ export default [
                 name: "ERT 1",
                 streams: [
                     {
+                        url: "https://restreamer.qzz.io/memfs/cc562359-cb97-47f1-b310-675902286e83.m3u8",
+                        quality: "1080p"
+                    },
+                    {
                         url: "http://94.67.8.121:55555/ERT%201%20HD",
                         external: true,
                         quality: "1080p50"
@@ -384,6 +392,30 @@ export default [
         ]
     },
     {
+        name: "Latvia",
+        isoCode: "LV",
+        channels: [
+            {
+                name: "LTV1",
+                streams: [
+                    {
+                        url: "https://restreamer.qzz.io/memfs/ee8c7848-8e55-4cd1-b599-36fdd248f1f1.m3u8",
+                        quality: "1080p"
+                    }
+                ]
+            },
+            {
+                name: "LTV7",
+                streams: [
+                    {
+                        url: "https://restreamer.qzz.io/memfs/b0db6e5c-8354-4686-b6f1-fbf495444540.m3u8",
+                        quality: "1080p"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         name: "Lithuania",
         isoCode: "LT",
         channels: [
@@ -391,8 +423,27 @@ export default [
                 name: "LRT TV",
                 streams: [
                     {
+                        url: "https://restreamer.qzz.io/memfs/96d84d8e-62fc-4d6b-9576-8962235ff522.m3u8",
+                        quality: "1080p"
+                    },
+                    {
                         url: "http://78.56.214.4:55555/LRT%20TELEVIZIJA%20HD",
                         external: true,
+                        quality: "1080p"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        name: "Moldova",
+        isoCode: "MD",
+        channels: [
+            {
+                name: "Moldova 1",
+                streams: [
+                    {
+                        url: "https://restreamer.qzz.io/memfs/76e69efe-e58b-43a1-81cd-bcda6bc40aa3.m3u8",
                         quality: "1080p"
                     }
                 ]
@@ -700,6 +751,10 @@ export default [
             {
                 name: "BBC One",
                 streams: [
+                    {
+                        url: "https://restreamer.qzz.io/memfs/5bfc30f7-2f8b-4031-9761-20088bb916ed.m3u8",
+                        quality: "1080p"
+                    },
                     {
                         url: "https://tvheadend.brookfield.xyz/stream/channel/8f5df721ff0a70c859f779c0c8ee5ffa?profile=matroska",
                         type: "direct",
