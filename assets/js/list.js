@@ -74,26 +74,6 @@ export default [
                         external: true
                     }
                 ]
-            },
-            {
-                name: "RTBF La Une",
-                streams: [
-                    {
-                        url: "http://109.89.79.6:55555/la%20une",
-                        external: true,
-                        quality: "1080p50"
-                    }
-                ]
-            },
-            {
-                name: "RTBF Tipik",
-                streams: [
-                    {
-                        url: "http://109.89.79.6:55555/Tipik",
-                        external: true,
-                        quality: "1080p50"
-                    }
-                ]
             }
         ]
     },
@@ -473,6 +453,7 @@ export default [
                 streams: [
                     {
                         url: "https://169-150-255-53-proxy.escfent.com/MRT1/index.m3u8",
+                        external: true,
                         quality: "1080p50"
                     }
                 ]
@@ -560,22 +541,6 @@ export default [
                     {
                         url: "https://netplus.zappr.stream/tvrinternational.m3u8",
                         quality: "576p50"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        name: "San Marino",
-        isoCode: "SM",
-        channels: [
-            {
-                name: "San Marino RTV",
-                streams: [
-                    {
-                        url: "http://77.39.161.42:55555/RTV%20San%20Marino",
-                        external: true,
-                        quality: "576p"
                     }
                 ]
             }
