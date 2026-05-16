@@ -98,39 +98,6 @@ export default [
         ]
     },
     {
-        name: "Bulgaria",
-        isoCode: "BG",
-        channels: [
-            {
-                name: "BNT 1",
-                streams: [
-                    {
-                        url: "https://193-235-65-225-9983-proxy.escfent.com/stream/channel/8bd986925812eb01257cc713bc7bd9f5?profile=webtv-h264-aac-matroska",
-                        type: "direct",
-                        quality: "384p",
-                        m3u8List: false
-                    },
-                    {
-                        url: "https://193-235-65-225-9983-proxy.escfent.com/stream/channel/8bd986925812eb01257cc713bc7bd9f5?profile=webtv-h264-aac-matroska",
-                        type: "iframe",
-                        quality: "384p",
-                        m3u8List: false
-                    }
-                ]
-            },
-            {
-                name: "BNT 1",
-                streams: [
-                    {
-                        url: "https://193-235-65-225-9983-proxy.escfent.com/stream/channel/8bd986925812eb01257cc713bc7bd9f5?profile=matroska",
-                        external: true,
-                        quality: "1080p50"
-                    }
-                ]
-            }
-        ]
-    },
-    {
         name: "Croatia",
         isoCode: "HR",
         channels: [
@@ -506,8 +473,7 @@ export default [
                 streams: [
                     {
                         url: "https://169-150-255-53-proxy.escfent.com/MRT1/index.m3u8",
-                        quality: "1080p50",
-                        external: true
+                        quality: "1080p50"
                     }
                 ]
             }
@@ -644,28 +610,6 @@ export default [
         ]
     },
     {
-        name: "Sweden",
-        isoCode: "SE",
-        channels: [
-            {
-                name: "SVT1",
-                streams: [
-                    {
-                        url: "https://193-235-65-225-9983-proxy.escfent.com/stream/channel/98c9090585857e9021d116d178fbd1b9?profile=matroska",
-                        type: "direct",
-                        quality: "720p50"
-                    },
-                    {
-                        url: "https://193-235-65-225-9983-proxy.escfent.com/stream/channel/98c9090585857e9021d116d178fbd1b9?profile=matroska",
-                        type: "iframe",
-                        quality: "720p50",
-                        m3u8List: false
-                    }
-                ]
-            }
-        ]
-    },
-    {
         name: "Switzerland",
         isoCode: "CH",
         channels: [
@@ -754,17 +698,6 @@ export default [
                     {
                         url: "https://restreamer.qzz.io/memfs/5bfc30f7-2f8b-4031-9761-20088bb916ed.m3u8",
                         quality: "1080p"
-                    },
-                    {
-                        url: "https://tvheadend.brookfield.xyz/stream/channel/8f5df721ff0a70c859f779c0c8ee5ffa?profile=matroska",
-                        type: "direct",
-                        quality: "1080p"
-                    },
-                    {
-                        url: "https://tvheadend.brookfield.xyz/stream/channel/8f5df721ff0a70c859f779c0c8ee5ffa?profile=matroska",
-                        type: "iframe",
-                        quality: "1080p",
-                        m3u8List: false
                     }
                 ]
             }
